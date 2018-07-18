@@ -1,36 +1,26 @@
 <template>
-  <view class="container">
-    <text class="text-color-primary">Bolão F1 app 2</text>
-    <text>Bem-vindo {{ name }} </text>
-    <button :title="btnName" :on-press="init" />
-  </view>
+  <app-navigation></app-navigation>
 </template>
  
-<style>
-.container {
-  background-color: darkslategray;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-.text-color-primary {
-  color: red;
-} 
-</style>
-
 <script>
-export default {
-  
-  data: () => ({
-    name: 'Marcelo',
-    btnName: 'Iniciar',
-  }),
-  methods: {
-    init() {
-      this.btnName = 'Fechar';  
-    }
-  },
+import { StackNavigator } from "vue-native-router";
+import LoginScreen from "./src/screens/LoginScreen.vue";
+import RankingScreen from "./src/screens/RankingScreen.vue";
 
+const AppNavigation = StackNavigator(
+  {
+    Login: LoginScreen,
+    Ranking: RankingScreen,
+  },
+  {
+    initialRouteName: 'Login',
+  }
+);
+
+export default {
+  components: {
+    AppNavigation
+  }
 }
 </script>
 
