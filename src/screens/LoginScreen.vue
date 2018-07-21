@@ -1,7 +1,6 @@
 <template>
   <view class="container">
     <text class="text-color-primary">Bolão F1</text>
-    <text>Bem-vindo {{ name }} </text>
     <button title="START" :on-press="login" />
   </view>
 </template>
@@ -27,8 +26,8 @@ export default {
   },
   methods: {
     login() {
-      //this.navigation.navigate("Ranking");
+      this.navigation.navigate("Ranking");
     }
-  }
+  },
 }
 </script>

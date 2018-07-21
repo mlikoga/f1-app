@@ -4,16 +4,23 @@
  
 <script>
 import { StackNavigator } from "vue-native-router";
-import LoginScreen from "./src/screens/LoginScreen.vue";
-import RankingScreen from "./src/screens/RankingScreen.vue";
+import LoginScreen from "./src/screens/LoginScreen";
+import RankingScreen from "./src/screens/RankingScreen";
 
 const AppNavigation = StackNavigator(
   {
-    Login: LoginScreen,
-    Ranking: RankingScreen,
+    Login: { screen: LoginScreen},
+    Ranking: { screen: RankingScreen},
   },
   {
     initialRouteName: 'Login',
+    navigationOptions: {
+      title: 'Bolão F1',
+      headerStyle: {
+        backgroundColor: '#000000',
+      },
+      headerTintColor: '#fff',
+    }
   }
 );
 
