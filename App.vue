@@ -5,12 +5,12 @@
 <script>
 import { StackNavigator } from "vue-native-router";
 import LoginScreen from "./src/screens/LoginScreen";
-import RankingScreen from "./src/screens/RankingScreen";
+import MainTabsScreen from "./src/screens/MainTabsScreen";
 
 const AppNavigation = StackNavigator(
   {
-    Login: { screen: LoginScreen},
-    Ranking: { screen: RankingScreen},
+    Login: LoginScreen,
+    Main:  MainTabsScreen,
   },
   {
     initialRouteName: 'Login',
