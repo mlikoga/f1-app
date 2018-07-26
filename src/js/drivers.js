@@ -1,0 +1,23 @@
+export const drivers = [
+  'Hamilton',
+  'Bottas',
+  'Vettel',
+  'Raikkonen',
+  'Ricciardo',
+  'Verstappen',
+  'Hulkenberg',
+  'Sainz',
+  'Magnussen',
+  'Grosjean',
+  'Perez',
+  'Ocon',
+  'Alonso',
+  'Vandoorne',
+  'Leclerc',
+  'Ericsson',
+  'Gasly',
+  'Hartley',
+  'Stroll',
+  'Sirotkin',
+];
+

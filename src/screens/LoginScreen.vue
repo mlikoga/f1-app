@@ -42,7 +42,7 @@ export default {
   methods: {
     login() {
       store.commit('login', this.username);
-      this.navigation.navigate('Main');
+      this.navigation.navigate('Aposta');
     }
   },
 }
